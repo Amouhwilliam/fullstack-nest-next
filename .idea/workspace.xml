@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08f21a6f-4430-4b3a-b717-33df724479f8" name="Changes" comment="" />
+    <list default="true" id="08f21a6f-4430-4b3a-b717-33df724479f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -47,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TypeScript.create-company-data.dto.ts.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/williamamouh/Documents/Projects/_cocrafter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -90,7 +92,7 @@
       <updated>1710102180181</updated>
       <workItem from="1710102181326" duration="15456000" />
       <workItem from="1710408115835" duration="55702000" />
-      <workItem from="1710525074880" duration="2499000" />
+      <workItem from="1710525074880" duration="3235000" />
     </task>
     <servers />
   </component>
