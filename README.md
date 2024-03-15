@@ -33,6 +33,22 @@ $ docker-compose down
 $ docker exec -it api-container /bin/bash
 ```
 
+### Run Prisma migration on the api
+
+```bash
+$ npx prisma migrate dev --name init
+```
+#### if you encounter cannot connect to postgres:5432 error, in the .env file change the host (postgres) with localhost and rerun the migration command
+
+```bash
+$ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/postgresdb?schema=public
+```
+#### after the migration don't forget to set the host to postgres
+
+```bash
+$ DATABASE_URL=postgresql://postgres:postgres@postgres:5432/postgresdb?schema=public
+```
+
 ## Installation and building the sdk
 
 ```bash
