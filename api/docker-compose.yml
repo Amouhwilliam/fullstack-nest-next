@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  api:
+    image: node:20.11.1
+    container_name: api-container
+    restart: always
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+    ports:
+      - 3333:3000
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    volumes:
+      - ./:/app
+    command: bash -c "yarn && yarn start:dev" # install node modules and start adonis server
+
+  postgres:
+    container_name: postgres-container
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "postgresdb"
+    ports:
+      - 5432:5432
+
+  pgadmin:
+    # container_name: vroom-pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "root"
+      PG_HOST: postgres
+      PG_PORT: 5432
+      PG_USER: "postgres"
+      PG_PASSWORD: "postgres"
+      PG_DB_NAME: "postgresdb"
+      DB_CONNECTION: "pg"
+    ports:
+      - 8000:80
+volumes:
+  postgres:
