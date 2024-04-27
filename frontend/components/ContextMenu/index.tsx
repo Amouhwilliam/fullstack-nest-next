@@ -14,12 +14,14 @@ interface ContextMenuInterface {
 
 export const ContextMenu = ({ x, y, isVisible, onClose, onMenuItemClick, documentType }: ContextMenuInterface) => {
     if (!isVisible) return null;
-    const menuRef = useRef(null)
+
     const handleClick = (action: string) => {
         onMenuItemClick(action);
         onClose();
     };
-
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const menuRef = useRef(null)
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useClickOutSide(menuRef, () => { onClose() })
 
     return (

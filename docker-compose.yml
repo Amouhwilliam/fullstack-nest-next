@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+
+  frontend:
+    image: node:20.11.1
+    container_name: frontend-container
+    restart: always
+    working_dir: /frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:3333
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/frontend
+    command: bash -c "yarn && yarn dev" # install node modules and start server
+
+  api:
+    image: node:20.11.1
+    container_name: api-container
+    restart: always
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+    ports:
+      - "3333:3000"
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    volumes:
+      - ./api:/app
+    command: bash -c "yarn && yarn start:dev" # install node modules and start server
+
+  postgres:
+    container_name: postgres-container
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PWD}
+      POSTGRES_DB: ${PG_DB}
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PG_ADMIN_USER}
+      PGADMIN_DEFAULT_PASSWORD: ${PG_ADMIN_PWD}
+      PG_HOST: postgres
+      PG_PORT: 5432
+      PG_USER: ${PG_USER}
+      PG_PASSWORD: ${PG_PWD}
+      PG_DB_NAME: ${PG_DB}
+      DB_CONNECTION: "pg"
+    ports:
+      - "8000:80"
+volumes:
+  postgres:

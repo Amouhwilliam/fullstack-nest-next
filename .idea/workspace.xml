@@ -5,7 +5,123 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08f21a6f-4430-4b3a-b717-33df724479f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/code/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/code/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/code/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/code/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/code/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/semanticDiagnostics/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/semanticDiagnostics/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/semanticDiagnostics/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/semanticDiagnostics/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/semanticDiagnostics/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/syntacticDiagnostics/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/syntacticDiagnostics/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/syntacticDiagnostics/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/syntacticDiagnostics/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/syntacticDiagnostics/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/112af0d18316e0b531b8e71fd73c915075168624" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/14bb3c3156e68ec705fce312dd01e6d181cd4208" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/4429eab41986c28bb7a9e85ecfcfdd7dae401dd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/52aa8274adb94f948f50cc61b70d7c6e26c0b27a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/53a859328f90c35254ca7985f3771e02f1e663e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/55ed57a3ea867706d063dd8d7c83a6e58f1bebc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/662aa3c17d91934a6771bf6187bc36d1a27786e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/6f226df71ac738fe85aaebc5be2281046bfc9a7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/7631169f2510109c1b0b0d9cc26b3a26adaec913" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/8112bf37f8b02fe833a2f678ed22d61baefa858a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/958c92f9858e45c31ecd68be0a0a956f3d365ed8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/9e076494c98f97f21bf2b868930fc34c59520517" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/b994a07cd3996edcd1b35c6fe69b1b9c95d4c50c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/d4cc6339f3b5085d48659a5332fbc433ba9d4387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/df8ac1dcfc6d4fa1c5004369e60d978c710524b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/eec6310123913ea295625f831738e0313c95b4c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_cjs/rpt2_ce297bf7fef10c636e7c8bf23d23b372fe097913/types/cache/f802680220c1fc5b674d81bb8a095df43c1fdf0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/code/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/code/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/code/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/code/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/code/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/semanticDiagnostics/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/semanticDiagnostics/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/semanticDiagnostics/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/semanticDiagnostics/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/semanticDiagnostics/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/syntacticDiagnostics/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/syntacticDiagnostics/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/syntacticDiagnostics/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/syntacticDiagnostics/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/syntacticDiagnostics/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/112af0d18316e0b531b8e71fd73c915075168624" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/14bb3c3156e68ec705fce312dd01e6d181cd4208" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/4429eab41986c28bb7a9e85ecfcfdd7dae401dd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/52aa8274adb94f948f50cc61b70d7c6e26c0b27a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/53a859328f90c35254ca7985f3771e02f1e663e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/55ed57a3ea867706d063dd8d7c83a6e58f1bebc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/662aa3c17d91934a6771bf6187bc36d1a27786e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/6f226df71ac738fe85aaebc5be2281046bfc9a7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/7631169f2510109c1b0b0d9cc26b3a26adaec913" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/8112bf37f8b02fe833a2f678ed22d61baefa858a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/958c92f9858e45c31ecd68be0a0a956f3d365ed8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/9e076494c98f97f21bf2b868930fc34c59520517" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/b994a07cd3996edcd1b35c6fe69b1b9c95d4c50c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/d4cc6339f3b5085d48659a5332fbc433ba9d4387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/df8ac1dcfc6d4fa1c5004369e60d978c710524b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/eec6310123913ea295625f831738e0313c95b4c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_es/rpt2_06836e0a8fded7ff9a603fa75131d0dc166104c8/types/cache/f802680220c1fc5b674d81bb8a095df43c1fdf0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/code/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/code/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/code/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/code/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/code/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/semanticDiagnostics/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/semanticDiagnostics/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/semanticDiagnostics/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/semanticDiagnostics/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/semanticDiagnostics/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/syntacticDiagnostics/cache/0bb0395db378b8ccbb779a1fb62bae4394c5f5af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/syntacticDiagnostics/cache/4b9342dd65743fe36308e647b36ec4366c9d9e36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/syntacticDiagnostics/cache/5ca6db8c874869325e56107b8fd8f42155459471" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/syntacticDiagnostics/cache/6def4e91fef65dec9b13a0fcc681dbd954676486" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/syntacticDiagnostics/cache/985b8a682e5b13c894182478e3ccf1610104517b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/112af0d18316e0b531b8e71fd73c915075168624" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/14bb3c3156e68ec705fce312dd01e6d181cd4208" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/4429eab41986c28bb7a9e85ecfcfdd7dae401dd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/52aa8274adb94f948f50cc61b70d7c6e26c0b27a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/53a859328f90c35254ca7985f3771e02f1e663e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/55ed57a3ea867706d063dd8d7c83a6e58f1bebc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/662aa3c17d91934a6771bf6187bc36d1a27786e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/6f226df71ac738fe85aaebc5be2281046bfc9a7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/7631169f2510109c1b0b0d9cc26b3a26adaec913" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/8112bf37f8b02fe833a2f678ed22d61baefa858a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/958c92f9858e45c31ecd68be0a0a956f3d365ed8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/9e076494c98f97f21bf2b868930fc34c59520517" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/b994a07cd3996edcd1b35c6fe69b1b9c95d4c50c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/d4cc6339f3b5085d48659a5332fbc433ba9d4387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/df8ac1dcfc6d4fa1c5004369e60d978c710524b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/eec6310123913ea295625f831738e0313c95b4c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_modern/rpt2_a7b1ed4e95317c60e5a0c1df3963a89250c16ea1/types/cache/f802680220c1fc5b674d81bb8a095df43c1fdf0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/112af0d18316e0b531b8e71fd73c915075168624" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/14bb3c3156e68ec705fce312dd01e6d181cd4208" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/4429eab41986c28bb7a9e85ecfcfdd7dae401dd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/52aa8274adb94f948f50cc61b70d7c6e26c0b27a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/53a859328f90c35254ca7985f3771e02f1e663e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/55ed57a3ea867706d063dd8d7c83a6e58f1bebc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/662aa3c17d91934a6771bf6187bc36d1a27786e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/6f226df71ac738fe85aaebc5be2281046bfc9a7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/7631169f2510109c1b0b0d9cc26b3a26adaec913" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/8112bf37f8b02fe833a2f678ed22d61baefa858a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/958c92f9858e45c31ecd68be0a0a956f3d365ed8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/9e076494c98f97f21bf2b868930fc34c59520517" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/b994a07cd3996edcd1b35c6fe69b1b9c95d4c50c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/d4cc6339f3b5085d48659a5332fbc433ba9d4387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/df8ac1dcfc6d4fa1c5004369e60d978c710524b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/eec6310123913ea295625f831738e0313c95b4c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/node_modules/.cache/.rts2_cache_umd/rpt2_72487465e9b735f93f4950b7ffc70a452297dce5/types/cache/f802680220c1fc5b674d81bb8a095df43c1fdf0f" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +166,14 @@
     "TypeScript.create-company-data.dto.ts.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/williamamouh/Documents/Projects/_cocrafter",
+    "last_opened_file_path": "/Users/williamamouh/Documents/Projects/_int/nest-nextjs-file-sys",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/williamamouh/Documents/Projects/_cocrafter/api/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/williamamouh/Documents/Projects/_int/nest-nextjs-file-sys/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,21 +182,31 @@
       <map>
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/sdk" />
       <recent name="$PROJECT_DIR$/api/src/company-data/dto" />
       <recent name="$PROJECT_DIR$/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend/app/documents/documentId" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/app/Hello" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,7 +218,9 @@
       <updated>1710102180181</updated>
       <workItem from="1710102181326" duration="15456000" />
       <workItem from="1710408115835" duration="55702000" />
-      <workItem from="1710525074880" duration="3235000" />
+      <workItem from="1710525074880" duration="4217000" />
+      <workItem from="1714214317741" duration="602000" />
+      <workItem from="1714214938289" duration="3249000" />
     </task>
     <servers />
   </component>
