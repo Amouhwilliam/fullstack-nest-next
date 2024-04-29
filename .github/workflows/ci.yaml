@@ -16,11 +16,11 @@ jobs:
     strategy:
       matrix:
         database-name:
-          - devices-app
+          - postgresdb
         database-connection:
           - "pg"
         database-user:
-          - postgresdb
+          - postgres
         database-password:
           - postgres
         database-host:
