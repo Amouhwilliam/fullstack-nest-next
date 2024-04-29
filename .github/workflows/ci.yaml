@@ -62,7 +62,7 @@ jobs:
         run: curl https://api.ipify.org
 
       - name: Create .env file and Install Dependencies
-        run: cd api && cp .env.dev .env && yarn install
+        run: cd api && cp .env.prod .env && yarn install
 
       - name: Run build
         run: cd api && yarn build
