@@ -39,26 +39,6 @@ $ docker exec -it api-container /bin/bash
 $ npx prisma migrate dev --name init
 ```
 
-## Installation and building the sdk
-
-```bash
-$ cd sdk
-```
-
-```bash
-$ yarn install
-```
-
-```bash
-$ yarn build
-```
-
-#### To run the on the sdk 
-
-```bash
-$ yarn test
-```
-
 ## Installation and starting the frontend
 
 ```bash
@@ -67,6 +47,12 @@ $ yarn install
 
 ```bash
 $ yarn dev
+```
+
+#### To run the on the sdk
+
+```bash
+$ yarn test
 ```
 
 #### Have fun :)
