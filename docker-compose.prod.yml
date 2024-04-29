@@ -16,7 +16,7 @@ services:
       - api
     volumes:
       - ./frontend:/frontend
-    command: bash -c "yarn && yarn dev"
+    command: bash -c "yarn && yarn build && yarn start" # serve the build
 
   nginx:
     image: nginx:latest
@@ -52,7 +52,7 @@ services:
       - redis
     volumes:
       - ./api:/app
-    command: bash -c "yarn && yarn start:dev" # install node modules and start server
+    command: bash -c "yarn && yarn build &&yarn start:prod" # install node modules, build and start the build
 
   postgres:
     container_name: postgres-container
@@ -99,6 +99,20 @@ services:
     volumes:
       - cache:/data
 
+  redis_insight: # redis db visualization dashboard
+    container_name: redis-insight-container
+    image: redislabs/redisinsight
+    restart: always
+    links:
+      - redis
+    depends_on:
+      - redis
+    ports:
+      - "8001:8001"
+    volumes:
+      - redis-insight:/db
+
 volumes:
   postgres:
   cache:
+  redis-insight:
