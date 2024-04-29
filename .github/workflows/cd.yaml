@@ -7,19 +7,6 @@ on:
 
 jobs:
 
-  changed-directories:
-    name: check changed directories
-    runs-on: ubuntu-latest
-    outputs:
-      deploy-app: ${{steps.app-changed.outputs.all_changed_files_count != '0' && 'deploy_backend' || ''}}
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: check if the app changed
-        id: app-changed
-        uses: tj-actions/changed-files@v42
-
   create-deployment-files:
     name: create deployment files
     runs-on: ubuntu-latest
