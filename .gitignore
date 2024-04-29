@@ -19,6 +19,8 @@ lerna-debug.log*
 .idea/
 
 **/.env
+frontend/.env
+./frontend/.env
 
 # OS
 .DS_Store
