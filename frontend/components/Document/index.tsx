@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {ContextMenu} from"../ContextMenu"
-import ApiSDK, {types} from '@document-app/api-sdk'
+import ApiSDK, {types} from '@/sdk'
 import {FolderIcon} from '@heroicons/react/24/outline'
 import {DocumentChartBarIcon} from '@heroicons/react/24/outline'
 import {useQueryClient} from "@tanstack/react-query";
@@ -9,7 +9,7 @@ import 'react-confirm-alert/src/react-confirm-alert.css';
 import {useRouter} from "next/navigation";
 
 interface FolderInterface {
-    document: types.CompanyDataInterface
+    document: types.DocumentInterface
     setDocumentToUpsert: Function
     openModal: Function
     setSelectedParent: Function
@@ -19,8 +19,8 @@ export default function Document({document, setDocumentToUpsert, openModal, setS
     const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
     const [isVisible, setIsVisible] = useState(false);
     const router = useRouter()
-
-    const client = new ApiSDK({baseUrl: process.env.NEXT_PUBLIC_API_URL})
+    const baseUrl: string = `${process.env.NEXT_PUBLIC_API_HOST}:${process.env.NEXT_PUBLIC_API_PORT}`
+    const client = new ApiSDK({baseUrl})
     const queryClient = useQueryClient()
 
     const handleContextMenu = (e: any) => {
@@ -42,7 +42,7 @@ export default function Document({document, setDocumentToUpsert, openModal, setS
                     label: 'Yes',
                     onClick: () => {
                         if(document?.id){
-                            client.deleteCompanyData(document?.id).then(()=>{
+                            client.deleteDocument(document?.id).then(()=>{
                                 queryClient.invalidateQueries({ queryKey: ['documents'] })
                             }).catch((e: any)=>{
                                 console.log(e)
