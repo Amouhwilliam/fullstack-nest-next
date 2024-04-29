@@ -20,7 +20,7 @@ jobs:
         database-connection:
           - "pg"
         database-user:
-          - admin_user
+          - postgresdb
         database-password:
           - postgres
         database-host:
