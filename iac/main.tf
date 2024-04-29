@@ -14,18 +14,25 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0caef02b518350c8b"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 
-  user_data = <<-EOF
-              #!/bin/bash
-              yum install -y docker
-              yum install docker-compose-plugin
-              systemctl enable docker
-              systemctl start docker
-              sudo chown $USER /var/run/docker.sock
-              docker run -p 80:80 -d nginx
+ /* user_data = <<-EOF
+              #!/bin/bash          
+              sudo apt-get update
+              sudo apt-get install ca-certificates curl
+              sudo install -m 0755 -d /etc/apt/keyrings
+              sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+              sudo chmod a+r /etc/apt/keyrings/docker.asc
+              echo \
+                "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+                $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+                sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+              sudo apt-get update
+              sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+              sudo apt-get install docker-compose-plugin
+              
               EOF
-
+  */
   tags = {
     Name = "AppServerInstance"
   }
