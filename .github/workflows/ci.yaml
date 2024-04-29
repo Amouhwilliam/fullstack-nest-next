@@ -74,7 +74,7 @@ jobs:
         run: cd api && yarn test
 
       - name: Build the frontend
-        run: cd frontend && yarn build
+        run: cd frontend && cp .env.prod .env && yarn build
 
       - name: Auto-Validation on Success
         if: success()
