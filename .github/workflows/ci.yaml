@@ -1,0 +1,84 @@
+---
+name: app CI
+
+on:
+  push:
+    branches: [ "develop" ]
+
+jobs:
+
+  build-and-test:
+    #needs: lint
+    runs-on: ubuntu-latest
+    container: node:20.11.1
+    env:
+      DB_CONNECTION: ${{ matrix.database-connection }}
+    strategy:
+      matrix:
+        database-name:
+          - postgresdb
+        database-connection:
+          - "pg"
+        database-user:
+          - postgres
+        database-password:
+          - postgres
+        database-host:
+          - postgres
+        database-port:
+          - 5432
+        redis-host:
+          - redis
+        redis-port:
+          - 6379
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: ${{ matrix.database-name }}
+          POSTGRES_USER: ${{ matrix.database-user }}
+          POSTGRES_PASSWORD: ${{ matrix.database-password }}
+        ports:
+          - ${{ matrix.database-port }}:${{ matrix.database-port }}
+        # Set health checks to wait until postgres has started
+        options: --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis
+        # Set health checks to wait until redis has started
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔎 Check IP
+        run: curl https://api.ipify.org
+
+      - name: Create .env file and Install Dependencies
+        run: cd api && cp .env.prod .env && yarn install
+
+      - name: Run build
+        run: cd api && yarn build
+
+      - name: Run migration
+        run: cd api && npx prisma migrate dev --name init
+
+      - name: Run the node.js app tests
+        run: cd api && yarn test
+
+      - name: Install the frontend
+        run: cd frontend && yarn install
+
+      - name: Build the frontend
+        run: cd frontend && cp .env.prod .env && yarn build
+
+      - name: Auto-Validation on Success
+        if: success()
+        run: echo "Succes all tests passed."

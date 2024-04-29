@@ -1,8 +1,10 @@
 # compiled output
 /dist
 /node_modules
-/build
-
+node_modules
+**/node_modules
+**/build
+**/.terraform/
 # Logs
 logs
 *.log
@@ -11,6 +13,14 @@ pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+
+.idea/workspace.xml
+.idea
+.idea/
+
+**/.env
+frontend/.env
+./frontend/.env
 
 # OS
 .DS_Store

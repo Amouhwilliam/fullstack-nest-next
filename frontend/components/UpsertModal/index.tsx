@@ -1,5 +1,5 @@
 import React from "react";
-import ApiSDK, {types} from '@document-app/api-sdk'
+import ApiSDK, {types} from '@/sdk'
 import { useQueryClient } from '@tanstack/react-query'
 import {useParams} from "next/navigation";
 import Box from '@mui/material/Box';
@@ -14,19 +14,20 @@ import MenuItem from '@mui/material/MenuItem';
 interface UpsertModalInterface {
     isOpen: boolean
     onClose: () => void
-    document: types.CompanyDataInterface
+    document: types.DocumentInterface
     setDocument: Function
-    selectedParent: types.CompanyDataInterface
+    selectedParent: types.DocumentInterface
 }
 export default function UpsertModal ({isOpen, onClose, document, setDocument, selectedParent}: UpsertModalInterface){
 
-    const client = new ApiSDK({baseUrl: process.env.NEXT_PUBLIC_API_URL})
+    const baseUrl: string = `${process.env.NEXT_PUBLIC_API_HOST}:${process.env.NEXT_PUBLIC_API_PORT}`
+    const client = new ApiSDK({baseUrl})
     const queryClient = useQueryClient()
     const params = useParams()
 
     const addDocument = () => {
         if(selectedParent?.id){
-            client.createCompanyData({...document, parentId: selectedParent?.id}).then((res)=>{
+            client.createDocument({...document, parentId: selectedParent?.id}).then((res)=>{
                 queryClient.invalidateQueries({ queryKey: ['documents'] })
                 onClose()
             }).catch((e)=>{
@@ -34,14 +35,14 @@ export default function UpsertModal ({isOpen, onClose, document, setDocument, se
             })
         } else {
             if(+params?.id){
-                client.createCompanyData({...document, parentId: +params?.id}).then((res)=>{
+                client.createDocument({...document, parentId: +params?.id}).then((res)=>{
                     queryClient.invalidateQueries({ queryKey: ['documents'] })
                     onClose()
                 }).catch((e)=>{
                     console.log(e)
                 })
             } else {
-                client.createCompanyData(document).then((res)=>{
+                client.createDocument(document).then((res)=>{
                     queryClient.invalidateQueries({ queryKey: ['documents'] })
                     onClose()
                 }).catch((e)=>{
@@ -53,7 +54,7 @@ export default function UpsertModal ({isOpen, onClose, document, setDocument, se
 
     const editDocument = () => {
         if(document?.id){
-            client.updateCompanyData(document?.id, document).then((res)=>{
+            client.updateDocument(document?.id, document).then((res)=>{
                 queryClient.invalidateQueries({ queryKey: ['documents'] })
                 onClose()
             }).catch((e)=>{
@@ -112,7 +113,8 @@ export default function UpsertModal ({isOpen, onClose, document, setDocument, se
                                value={document?.name}
                                placeholder='Name'
                                label="Name" variant="outlined"
-                               onChange={handleChange}/>
+                               onChange={handleChange}
+                    />
 
                     <TextField id="content"
                                name="content"
@@ -120,7 +122,8 @@ export default function UpsertModal ({isOpen, onClose, document, setDocument, se
                                placeholder='Content'
                                label="Content"
                                variant="outlined"
-                               onChange={handleChange}/>
+                               onChange={handleChange}
+                    />
                 </Stack>
 
                 <div className={"mt-6"}>
@@ -138,7 +141,6 @@ export default function UpsertModal ({isOpen, onClose, document, setDocument, se
                         Submit
                     </Button>
                 </div>
-
             </Box>
         </Modal>
     );
