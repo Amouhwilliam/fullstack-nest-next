@@ -73,6 +73,9 @@ jobs:
       - name: Run the node.js app tests
         run: cd api && yarn test
 
+      - name: Install the frontend
+        run: cd frontend && yarn install
+
       - name: Build the frontend
         run: cd frontend && cp .env.prod .env && yarn build
 
