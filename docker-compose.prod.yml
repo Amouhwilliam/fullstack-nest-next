@@ -12,19 +12,15 @@ services:
       NEXT_PUBLIC_API_PORT: ${API_PORT}
     ports:
       - "3000:3000"
-    links:
-      - api
     depends_on:
       - api
     volumes:
       - ./frontend:/frontend
     command: bash -c "yarn && yarn dev"
 
-  nginx: #to override in production
+  nginx:
     image: nginx:latest
     container_name: production_nginx
-    links:
-      - frontend
     depends_on:
       - frontend
     volumes:
@@ -103,20 +99,6 @@ services:
     volumes:
       - cache:/data
 
-  redis_insight: # redis db visualization dashboard
-    container_name: redis-insight-container
-    image: redislabs/redisinsight
-    restart: always
-    links:
-      - redis
-    depends_on:
-      - redis
-    ports:
-      - "8001:8001"
-    volumes:
-      - redis-insight:/db
-
 volumes:
   postgres:
   cache:
-  redis-insight:

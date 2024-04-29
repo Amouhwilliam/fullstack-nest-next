@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import useClickOutSide from "@/utilities/useClickOutside";
 import MenuItem from"./menuItem"
-import {types} from '@document-app/api-sdk'
+import {types} from '@/sdk'
 
 interface ContextMenuInterface {
     x: number

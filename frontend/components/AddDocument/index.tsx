@@ -1,7 +1,6 @@
 import React from "react";
 import {FolderPlusIcon} from "@heroicons/react/24/outline";
 
-
 interface  AddDocumentInterface {
     onOpen: Function
 }
