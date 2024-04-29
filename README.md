@@ -10,7 +10,7 @@ $ cd api
 ```
 
 ```bash
-$ cp .env.dev .env
+$ cp .env.prod .env
 ```
 
 ```bash
