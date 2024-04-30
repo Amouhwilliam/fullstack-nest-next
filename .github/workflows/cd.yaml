@@ -14,7 +14,7 @@ jobs:
       - name: plan deployment
         uses: appleboy/ssh-action@master
         with:
-          host: 18.195.161.82 
+          host: 18.159.149.70
           username: ${{ secrets.EC2_USERNAME }}
           password: ${{ secrets.EC2_PASSWORD }}
           port: 22
