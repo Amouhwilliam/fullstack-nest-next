@@ -36,7 +36,7 @@ $ docker exec -it api-container /bin/bash
 ### Run Prisma migration on the api
 
 ```bash
-$ npx prisma migrate dev --name init
+$ npx prisma migrate dev --name init 
 ```
 
 ## Installation and starting the frontend
