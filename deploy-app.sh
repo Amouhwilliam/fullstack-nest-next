@@ -1,3 +1,6 @@
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
+
 docker compose -f docker-compose.prod.yml down
 git pull
 git reset --hard origin/main
