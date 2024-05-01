@@ -1,4 +1,4 @@
-sudo docker compose -f docker-compose.prod.yml down
+#sudo docker compose -f docker-compose.prod.yml down
 git pull
 git reset --hard origin/main
 sudo rm .env
@@ -13,4 +13,5 @@ cd ../api
 sudo rm -rf node_modules
 npm install
 cd ..
-sudo docker compose -f docker-compose.prod.yml up -d
+#sudo docker compose -f docker-compose.prod.yml up -d
+sudo docker compose restart
