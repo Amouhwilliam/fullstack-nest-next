@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0caef02b518350c8b"
-  instance_type = "t3.micro"
+  instance_type = "t2.medium"
 
  /* user_data = <<-EOF
               #!/bin/bash          
@@ -34,7 +34,7 @@ resource "aws_instance" "app_server" {
               EOF
   */
   tags = {
-    Name = "AppServerInstance"
+    Name = "AppInstance"
   }
 }
 
