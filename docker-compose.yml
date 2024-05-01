@@ -23,6 +23,7 @@ services:
   nginx: #to override in production
     image: nginx:latest
     container_name: production_nginx
+    restart: always
     links:
       - frontend
     depends_on:
