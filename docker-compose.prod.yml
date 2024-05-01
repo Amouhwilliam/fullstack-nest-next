@@ -52,7 +52,7 @@ services:
       - redis
     volumes:
       - ./api:/app
-    command: bash -c "npx prisma migrate dev --name init && yarn build && yarn start:prod" # install node modules, build and start the build
+    command: bash -c "yarn build && yarn start:prod" # install node modules, build and start the build
 
   postgres:
     container_name: postgres-container
