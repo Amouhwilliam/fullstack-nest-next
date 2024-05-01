@@ -16,7 +16,7 @@ services:
       - api
     volumes:
       - ./frontend:/frontend
-    command: bash -c "yarn && yarn build && yarn start" # serve the build
+    command: bash -c "yarn start" # serve the build
 
   nginx:
     image: nginx:latest
@@ -52,7 +52,7 @@ services:
       - redis
     volumes:
       - ./api:/app
-    command: bash -c "yarn && yarn build &&yarn start:prod" # install node modules, build and start the build
+    command: bash -c "yarn start:prod" # install node modules, build and start the build
 
   postgres:
     container_name: postgres-container
