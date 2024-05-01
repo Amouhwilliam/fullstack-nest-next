@@ -1,5 +1,7 @@
-export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
+# Load nvm first to enable node, npm, npx, etc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 
 docker compose -f docker-compose.prod.yml down
 git pull
