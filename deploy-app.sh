@@ -1,3 +1,4 @@
+docker compose -f docker-compose.prod.yml down
 git pull
 git reset --hard origin/main
 cp .env.prod .env
@@ -10,5 +11,4 @@ sudo rm -rf node_modules
 yarn install
 yarn build
 cd ..
-docker compose -f docker-compose.prod.yml down
 docker compose -f docker-compose.prod.yml up -d
