@@ -10,6 +10,5 @@ npm run build
 cd ../api
 sudo rm -rf node_modules
 npm install
-npm run build
 cd ..
 sudo docker compose -f docker-compose.prod.yml up -d
