@@ -58,5 +58,9 @@ $ yarn dev
 ```bash
 $ yarn test
 ```
-###18.159.149.70:8080  to acces the app
+### to acces the app
+
+```bash
+http://18.159.149.70:8080
+```
 #### Have fun :)
