@@ -98,7 +98,7 @@ export default function DocumentPage() {
                 </div>
                 <div className={"w-full h-full flex justify-center items-center mt-12"}>
                     {isLoading ?
-                        <div>loading........</div>
+                        <div>loading...</div>
                         :
                         (data && data.length <= 0 ?
                                 (search.length <= 0 ? <AddDocument onOpen={onOpen}/> : <div>No data found!</div>)
@@ -109,7 +109,7 @@ export default function DocumentPage() {
                                     }
                                     <div className="fixed bottom-6 " style={{right: "calc(50% - 75px)"}}>
                                         <div onClick={onOpen} className="px-3 cursor-pointer py-2 font-bold rounded bg-gray-200 hover:bg-gray-300">
-                                            Add a -document-
+                                            Add a document
                                         </div>
                                     </div>
                                 </div>
