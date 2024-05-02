@@ -87,7 +87,7 @@ export default function DocumentPage() {
         <div className={"w-full h-screen flex items-center justify-center pt-10"}>
             <div className={"w-[1024px] h-full bg-gray-100 rounded-xl"}>
                 <div className={"flex flex-col md:flex-row md:justify-between text-4xl font-bold m-6"}>
-                    <span className={"capitalize"}>{folder ? folder.name: "My Documents"}</span>
+                    <span className={"capitalize"}>{folder ? folder.name: "My Documents-- hello"}</span>
                     <div className={"mt-3 md:mt-0"}>
                         <SearchInputSearch
                             handleSearch={handleSearch}
