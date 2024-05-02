@@ -10,7 +10,7 @@ $ cd api
 ```
 
 ```bash
-$ cp .env.prod .env
+$ cp .env.dev .env
 ```
 
 ```bash
@@ -39,7 +39,11 @@ $ docker exec -it api-container /bin/bash
 $ npx prisma migrate dev --name init 
 ```
 
-## Installation and starting the frontend
+## Installation and starting the frontend on his own
+
+```bash
+$ cd frontend
+```
 
 ```bash
 $ yarn install

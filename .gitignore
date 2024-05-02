@@ -45,6 +45,8 @@ frontend/.env
 !.vscode/launch.json
 !.vscode/extensions.json
 
+yarn.lock
+**/yarn.lock
 # dotenv environment variable files
 .env
 .env.development.local
