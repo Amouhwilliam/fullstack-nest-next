@@ -14,4 +14,4 @@ sudo rm -rf node_modules
 npm install
 cd ..
 sudo docker compose -f docker-compose.prod.yml up -d
-sudo docker compose restart
+#sudo docker compose restart
