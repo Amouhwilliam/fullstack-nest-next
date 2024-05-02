@@ -101,7 +101,7 @@ export default function DocumentPage() {
                         <div>loading...</div>
                         :
                         (data && data.length <= 0 ?
-                                (search.length <= 0 ? <AddDocument onOpen={onOpen}/> : <div>No data found!</div>)
+                                (search.length <= 0 ? <AddDocument onOpen={onOpen}/> : <div>No data found.</div>)
                                 :
                                 <div className={"w-full h-full p-6"}>
                                     {
